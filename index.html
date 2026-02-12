@@ -18,17 +18,15 @@ If they start tolling together, after what time will they next toll together?
 <br><br>
 <button onclick="checkAnswer()">Submit</button>
 
-<p id="result"></p>
-
 <script>
 function checkAnswer(){
     var ans = document.getElementById("answer").value.trim();
 
     if(ans === "180"){
-        alert("Correct 😈 Redirecting...");
+        // correct answer → rickroll
         window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
     }else{
-        alert("Correct 😈 Redirecting...");
+        // wrong answer → wrong video
         window.location.href = "https://youtu.be/3x3610-nQZI?si=KfGVg7FyYprTsAZc";
     }
 }
