@@ -1,32 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>Math Challenge</title>
-</head>
+<body style="text-align:center; margin-top:100px; font-family:Arial;">
 
-<body style="font-family:Arial; text-align:center; margin-top:100px;">
-
-<h2>Solve this to continue 😈</h2>
+<h3>Solve the question</h3>
 
 <p>
 Three bells toll at intervals of 9, 12, 15 minutes respectively.
 If they start tolling together, after what time will they next toll together?
 </p>
 
-<input type="number" id="answer" placeholder="Enter answer">
-<br><br>
+<input id="answer">
 <button onclick="checkAnswer()">Submit</button>
 
 <script>
 function checkAnswer(){
-    var ans = document.getElementById("answer").value.trim();
+    var ans = document.getElementById("answer").value;
 
-    if(ans === "180"){
-        // correct answer → rickroll
+    if(ans == 180){
         window.location.href = "https://www.youtube.com/watch?v=dQw4w9WgXcQ";
     }else{
-        // wrong answer → wrong video
         window.location.href = "https://youtu.be/3x3610-nQZI?si=KfGVg7FyYprTsAZc";
     }
 }
