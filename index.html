@@ -18,13 +18,13 @@ body{
     color:white;
 }
 
-/* NAVBAR */
 nav{
     background:#e10600;
     padding:15px;
     position:fixed;
     width:100%;
     top:0;
+    z-index:1000;
 }
 
 nav ul{
@@ -44,9 +44,8 @@ nav a:hover{
     text-decoration:underline;
 }
 
-/* SECTIONS */
 section{
-    padding:100px 20px;
+    padding:120px 20px;
     text-align:center;
 }
 
@@ -59,7 +58,7 @@ section{
 }
 
 #home h1{
-    font-size:50px;
+    font-size:60px;
     color:#e10600;
 }
 
@@ -67,18 +66,40 @@ section{
     display:flex;
     justify-content:center;
     flex-wrap:wrap;
-    gap:20px;
-    margin-top:30px;
+    gap:30px;
+    margin-top:40px;
 }
 
 .card{
     background:#222;
-    padding:20px;
-    width:250px;
-    border-radius:10px;
+    padding:25px;
+    width:280px;
+    border-radius:12px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+.card img{
+    width:120px;
+    margin-bottom:15px;
 }
 
 .card h3{
+    color:#e10600;
+}
+
+#about p{
+    max-width:900px;
+    margin:20px auto;
+    line-height:1.8;
+    font-size:18px;
+}
+
+#about h2{
+    font-size:40px;
     color:#e10600;
 }
 
@@ -104,33 +125,48 @@ footer{
 
 <section id="home">
 <h1>FORMULA 1</h1>
-<p>The pinnacle of motorsport</p>
+<p>The Pinnacle of Motorsport</p>
 </section>
 
 <section id="about">
 <h2>About Formula 1</h2>
 <p>
-Formula 1 is the highest class of international single-seater auto racing.
-It features the fastest regulated road-course racing cars in the world.
-The championship consists of multiple races known as Grands Prix.
+Formula 1 (F1) is the highest level of international single-seater automobile racing, governed by the FIA.
+It represents the pinnacle of motorsport technology, combining elite driver skill with cutting-edge engineering.
+Each season consists of a series of races called Grands Prix, held worldwide on purpose-built circuits and street tracks.
+</p>
+
+<p>
+Modern F1 cars are powered by hybrid power units combining turbocharged V6 engines with advanced energy recovery systems.
+They can reach speeds over 350 km/h and generate immense aerodynamic downforce, allowing them to corner at extraordinary speeds.
+</p>
+
+<p>
+Formula 1 is not just about speed — it is a global spectacle involving strategy, tire management,
+pit stops, team coordination, and constant technological innovation.
+With millions of fans worldwide, F1 continues to push the boundaries of performance and competition.
 </p>
 </section>
 
 <section id="teams">
-<h2>Top Teams</h2>
+<h2 style="font-size:40px; color:#e10600;">Top Teams</h2>
+
 <div class="card-container">
 
 <div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/en/0/0c/Red_Bull_Racing_logo.svg">
 <h3>Red Bull Racing</h3>
-<p>Dominant in recent seasons with incredible aerodynamic performance.</p>
+<p>Known for aerodynamic excellence and recent championship dominance.</p>
 </div>
 
 <div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/commons/5/5f/Mercedes_AMG_Petronas_F1_Logo.svg">
 <h3>Mercedes</h3>
-<p>Eight-time constructors’ champions with advanced hybrid technology.</p>
+<p>Eight-time constructors’ champions with revolutionary hybrid dominance.</p>
 </div>
 
 <div class="card">
+<img src="https://upload.wikimedia.org/wikipedia/en/d/d4/Scuderia_Ferrari_Logo.svg">
 <h3>Ferrari</h3>
 <p>The most historic and iconic team in Formula 1 history.</p>
 </div>
@@ -139,35 +175,36 @@ The championship consists of multiple races known as Grands Prix.
 </section>
 
 <section id="drivers">
-<h2>Top Drivers</h2>
+<h2 style="font-size:40px; color:#e10600;">Top Drivers</h2>
+
 <div class="card-container">
 
 <div class="card">
 <h3>Max Verstappen</h3>
-<p>Multiple-time World Champion known for aggressive racing style.</p>
+<p>Multiple-time World Champion with aggressive precision driving.</p>
 </div>
 
 <div class="card">
 <h3>Lewis Hamilton</h3>
-<p>Seven-time World Champion with record-breaking achievements.</p>
+<p>Seven-time World Champion and one of the greatest drivers ever.</p>
 </div>
 
 <div class="card">
 <h3>Charles Leclerc</h3>
-<p>Ferrari star known for exceptional qualifying pace.</p>
+<p>Ferrari’s star driver known for exceptional qualifying speed.</p>
 </div>
 
 </div>
 </section>
 
 <section id="contact">
-<h2>Contact</h2>
+<h2 style="font-size:40px; color:#e10600;">Contact</h2>
 <p>Email: info@f1world.com</p>
-<p>Follow us for latest updates and race results.</p>
+<p>Follow us for the latest race updates and standings.</p>
 </section>
 
 <footer>
-<p>© 2026 Formula 1 World | Created for Educational Purpose</p>
+<p>© 2026 Formula 1 World | Educational Project</p>
 </footer>
 
 </body>
